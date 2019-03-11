@@ -81,7 +81,7 @@ static int check_refname_component(const char *refname, int *flags,
 {
 	const char *cp;
 	char last = '\0';
-	size_t component_start;
+	size_t component_start = 0;
 
 	if (sanitized)
 		component_start = sanitized->len;
